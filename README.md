@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# socket.io sever node.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a basic chat client implemented with React.js, utilizing Socket.IO for real-time communication with a chat server. It demonstrates how to establish a connection to a Socket.IO server and exchange messages in real-time.
 
-## Available Scripts
+You can use my socket.ip [server](https://github.com/yuchengH1988/socket-io-server-js) here.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Real-time messaging between clients in different rooms
+- call an API for sending notification to a user who sets up a name.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Message
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Join a room to message other people in the same room
 
-### `npm test`
+### Notification
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Set up your name to active your notification
+- Once the server side was called, you will receive a notification.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow these instructions to set up the chat client in your local development environment.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- A running instance of a Socket.IO chat server (Refer to the server's README for setup instructions)
+- A modern web browser that supports JavaScript and WebSocket
 
-### `npm run eject`
+### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Follow these steps to install and set up the project locally:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone this repository to your local machine:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/yuchengH1988/socket-io-server-js
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navigate into the project directory
 
-## Learn More
+   ```cmd
+   cd projectname
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```cmd
+   npm install
+   ```
 
-### Code Splitting
+4. Start the server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```cmd
+   npm run start
+   ```
 
-### Analyzing the Bundle Size
+   This will launch the server on `localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Authors
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Calvin Huang** - [GitHub](https://github.com/yuchengH1988)
+  
